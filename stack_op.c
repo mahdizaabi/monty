@@ -27,6 +27,8 @@ void push_me(stack_t **stack, unsigned int ln)
 	if (node == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed)");
+		clean_stack(*stack);
+		clean_all();
 		exit(EXIT_FAILURE);
 	}
 
