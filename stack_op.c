@@ -15,7 +15,7 @@ void push_me(stack_t **stack, unsigned int ln)
 
 	pow = strtok(NULL, " \n\t\a");
 
-	if (pow == NULL || check_dig(pow) < 1)
+	if (pow == NULL || check_dig(pow) < 0)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", ln);
 		clean_stack(*stack);
