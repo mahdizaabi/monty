@@ -18,7 +18,8 @@ void push_me(stack_t **stack, unsigned int ln)
 	if (pow == NULL || check_dig(pow) < 1)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", ln);
-
+		clean_stack(*stack);
+		clean_all();
 		exit(EXIT_FAILURE);
 	}
 	powre = atoi(pow);
