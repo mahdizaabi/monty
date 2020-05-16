@@ -19,6 +19,8 @@ void go_to(stack_t **stack, unsigned int ln)
 				};
 
 	tryr = strtok(varx.buffer, " \n\t\a");
+	if (tryr == NULL)
+		return;
 	i = 0;
 	while (opst[i].opcode != NULL)
 	{
@@ -29,7 +31,7 @@ void go_to(stack_t **stack, unsigned int ln)
 		}
 		i++;
 	}
-	if (tryr == NULL || opst[i].opcode == NULL)
+	if (opst[i].opcode == NULL)
 
 		fprintf(stderr, "L%d: unknown instruction %s\n", ln, tryr);
 		clean_stack(*stack);
