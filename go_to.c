@@ -20,9 +20,9 @@ void go_to(stack_t **stack, unsigned int ln)
 
 	tryr = strtok(varx.buffer, " \n\t\a");
 	i = 0;
-	while (tryr != NULL && opst[i].opcode != NULL)
+	while (opst[i].opcode != NULL)
 	{
-		if (strcmp(opst[i].opcode, tryr) == 0)
+		if (tryr != NULL && strcmp(opst[i].opcode, tryr) == 0)
 		{
 			opst[i].f(stack, ln);
 			return;
