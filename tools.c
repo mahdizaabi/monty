@@ -6,17 +6,15 @@
 **/
 int check_dig(char *s)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
-	while (s[i])
+	if (s[0] == '-')
+		i = 1;
+
+	for ( ; s[i] != '\0'; i++)
 	{
-		if (s[0] == '-')
-			i++;
-		if (s[i] >= '0' && s[i] <= '9')
-			i++;
-		else
-		return (-1);
+		if (s[i] < 48 || s[i] > 57)
+			return (-1);
 	}
-	return (1);
+	return (0);
 }
