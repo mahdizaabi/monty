@@ -13,6 +13,7 @@ void go_to(stack_t **stack, unsigned int ln)
 	instruction_t opst[] = {
 				{"push", push_me},
 				{"pall", pall_me},
+				{"pint", pint_me},
 				{NULL, NULL}
 				};
 
