@@ -66,4 +66,7 @@ void pall_me(stack_t **stack, unsigned int ln);
 void clean_stack(stack_t *stack);
 void clean_all(void);
 void pint_me(stack_t **stack, unsigned int ln);
+void pop_me(stack_t **stack, unsigned int ln);
+int delete_node(stack_t **stack);
 #endif
+
