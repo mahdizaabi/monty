@@ -19,7 +19,7 @@ void pall_me(stack_t **stack, unsigned int ln)
 }
 
 /**
-  * pint - print from top of the stack
+  * pint_me - print from top of the stack
   * @stack: pointer to stack
   * @ln: number of lines
   */
@@ -36,9 +36,9 @@ void pint_me(stack_t **stack, unsigned int ln)
 	printf("%d\n", (*stack)->n);
 }
 /**
-  * pop - remove from top the stack
+  * pop_me - remove from top the stack
   * @stack: pointer to stack
-  * @line: instruction line in case of error
+  * @ln: instruction line in case of error
   */
 void pop_me(stack_t **stack, unsigned int ln)
 {
