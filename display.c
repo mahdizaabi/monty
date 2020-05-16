@@ -35,3 +35,18 @@ void pint_me(stack_t **stack, unsigned int ln)
 
 	printf("%d\n", (*stack)->n);
 }
+/**
+  * pop - remove from top the stack
+  * @stack: pointer to stack
+  * @line: instruction line in case of error
+  */
+void pop_me(stack_t **stack, unsigned int ln)
+{
+	if (delete_node(stack) == 0)
+	{
+		fprintf(stderr, "L%d: can't pop an empty stack\n", ln);
+		clean_stack(*stack);
+		clean_all();
+		exit(EXIT_FAILURE);
+	}
+}
