@@ -65,5 +65,5 @@ int check_dig(char *s);
 void pall_me(stack_t **stack, unsigned int ln);
 void clean_stack(stack_t *stack);
 void clean_all(void);
+void pint_me(stack_t **stack, unsigned int ln);
 #endif
-
