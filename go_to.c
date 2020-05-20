@@ -26,7 +26,7 @@ void go_to(stack_t **stack, unsigned int ln)
 				};
 
 	tryr = strtok(varx.buffer, " \n\t\a");
-	if (tryr == NULL || tryr == '#')
+	if (tryr == NULL || tryr[0] == '#')
 		return;
 
 	i = 0;
