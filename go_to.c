@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
-* go_to- bridge to the stack operations
+* go_to- bride to the stack operations
 * @stack: pointer to the struct
 * @ln: line number
 * Return: void
