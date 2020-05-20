@@ -72,5 +72,6 @@ void swap_me(stack_t **stack, unsigned int ln);
 void add_me(stack_t **stack, unsigned int ln);
 void nop_me(stack_t **stack, unsigned int ln);
 void subtract_me(stack_t **stack, unsigned int ln);
+void divide_me(stack_t **stack, unsigned int ln);
 #endif
 
