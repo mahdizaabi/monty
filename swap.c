@@ -31,5 +31,6 @@ void swap_me(stack_t **stack, unsigned int ln)
 	else
 	{
 		*stack = (*stack)->next;
+		return;
 	}
 }
