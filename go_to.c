@@ -23,6 +23,7 @@ void go_to(stack_t **stack, unsigned int ln)
 				{"mul", multiply_me},
 				{"mod", mod_me},
 				{"pchar", print_me},
+				{"pstr", printx_me},
 				{NULL, NULL}
 				};
 
@@ -45,6 +46,5 @@ void go_to(stack_t **stack, unsigned int ln)
 		fprintf(stderr, "L%d: unknown instruction %s\n", ln, tryr);
 		clean_stack(*stack);
 		clean_all();
-
 		exit(EXIT_FAILURE);
 }
