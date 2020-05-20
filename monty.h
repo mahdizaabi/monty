@@ -77,5 +77,6 @@ void multiply_me(stack_t **stack, unsigned int ln);
 void mod_me(stack_t **stack, unsigned int ln);
 void print_me(stack_t **stack, unsigned int ln);
 void printx_me(stack_t **stack, unsigned int ln);
+void rotl(stack_t **stack, unsigned int ln);
 #endif
 

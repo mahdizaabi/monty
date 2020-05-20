@@ -24,6 +24,7 @@ void go_to(stack_t **stack, unsigned int ln)
 				{"mod", mod_me},
 				{"pchar", print_me},
 				{"pstr", printx_me},
+				{"rotl", rotl},
 				{NULL, NULL}
 				};
 
