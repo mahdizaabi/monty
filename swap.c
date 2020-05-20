@@ -19,9 +19,9 @@ void swap_me(stack_t **stack, unsigned int ln)
 	}
 
 	temp1 = *stack;
-	if ((*stack)->next->next != NULL)
+	temp2 = (*stack)->next;
+	if (temp2->next != NULL)
 	{
-		temp2 = (*stack)->next;
 		temp1->next = temp2->next;
 		temp1->prev = temp2;
 		temp2->next = temp1;
@@ -30,7 +30,11 @@ void swap_me(stack_t **stack, unsigned int ln)
 	}
 	else
 	{
-		*stack = (*stack)->next;
-		return;
+		temp2->next = *stack;
+		temp2->prev = NULL;
+		temp1->prev = temp2;
+		temp1->next = NULL;
+		*stack = temp2;
+
 	}
 }
