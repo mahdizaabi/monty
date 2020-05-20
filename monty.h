@@ -74,5 +74,6 @@ void nop_me(stack_t **stack, unsigned int ln);
 void subtract_me(stack_t **stack, unsigned int ln);
 void divide_me(stack_t **stack, unsigned int ln);
 void multiply_me(stack_t **stack, unsigned int ln);
+void mod_me(stack_t **stack, unsigned int ln);
 #endif
 

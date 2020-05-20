@@ -21,6 +21,7 @@ void go_to(stack_t **stack, unsigned int ln)
 				{"sub", subtract_me},
 				{"div", divide_me},
 				{"mul", multiply_me},
+				{"mod", mod_me},
 				{NULL, NULL}
 				};
 
