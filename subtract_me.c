@@ -17,8 +17,6 @@ void subtract_me(stack_t **stack, unsigned int ln)
 	}
 
 	temp = *stack;
-	temp->next->n = (temp->n) - (temp->next->n);
-	if (temp->next->n < 0)
-		temp->next->n *= -1;
+	temp->next->n -= temp->n;
 	pop_me(stack, ln);
 }
