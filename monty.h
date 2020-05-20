@@ -70,5 +70,6 @@ void pop_me(stack_t **stack, unsigned int ln);
 int delete_node(stack_t **stack);
 void swap_me(stack_t **stack, unsigned int ln);
 void add_me(stack_t **stack, unsigned int ln);
+void nop_me(stack_t **stack, unsigned int ln);
 #endif
 
