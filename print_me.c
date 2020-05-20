@@ -19,7 +19,7 @@ void print_me(stack_t **stack, unsigned int ln)
 		exit(EXIT_FAILURE);
 	}
 
-	if ((*stack)->n < 0 && (*stack)->n > 63)
+	if ((*stack)->n < 0 || (*stack)->n > 127)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", ln);
 		clean_stack(*stack);
