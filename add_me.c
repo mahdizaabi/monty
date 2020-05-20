@@ -10,7 +10,7 @@ void add_me(stack_t **stack, unsigned int ln)
 
 	if ((*stack) == NULL || (*stack)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't swap, stack too short\n", ln);
+		fprintf(stderr, "L%d: can't add, stack too short\n", ln);
 		clean_stack(*stack);
 		clean_all();
 		exit(EXIT_FAILURE);
