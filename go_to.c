@@ -43,7 +43,6 @@ void go_to(stack_t **stack, unsigned int ln)
 		i++;
 	}
 	if (opst[i].opcode == NULL)
-
 		fprintf(stderr, "L%d: unknown instruction %s\n", ln, tryr);
 		clean_stack(*stack);
 		clean_all();
