@@ -9,19 +9,22 @@
 
 void printx_me(stack_t **stack, unsigned int ln)
 {
+	stack_t *temp;
 	(void) ln;
 
+	temp = *stack;
 	if ((*stack) == NULL || *stack == NULL)
 	{
 		printf("\n");
+		return;
 	}
 
-	while ((*stack)->next != NULL)
+	while (temp != NULL)
 	{
-		if ((*stack)->n <= 0 || (*stack)->n > 127)
+		if (temp->n <= 0 || temp->n > 127)
 			break;
-		printf("%c", (*stack)->n);
-		*stack = (*stack)->next;
+		printf("%c", temp->n);
+		temp = temp->next;
 	}
 	printf("\n");
 }
