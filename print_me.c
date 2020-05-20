@@ -13,7 +13,7 @@ void print_me(stack_t **stack, unsigned int ln)
 
 	if ((*stack) == NULL)
 	{
-		return;
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", ln);
 		clean_stack(*stack);
 		clean_all();
 		exit(EXIT_FAILURE);
@@ -21,7 +21,7 @@ void print_me(stack_t **stack, unsigned int ln)
 
 	if ((*stack)->n < 0 && (*stack)->n > 63)
 	{
-		fprintf(stderr, "L%d: can't pchar, value out of range", ln);
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", ln);
 		clean_stack(*stack);
 		clean_all();
 		exit(EXIT_FAILURE);
