@@ -26,8 +26,9 @@ void go_to(stack_t **stack, unsigned int ln)
 				};
 
 	tryr = strtok(varx.buffer, " \n\t\a");
-	if (tryr == NULL)
+	if (tryr == NULL || tryr == '#')
 		return;
+
 	i = 0;
 	while (opst[i].opcode != NULL)
 	{
