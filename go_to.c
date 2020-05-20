@@ -15,6 +15,7 @@ void go_to(stack_t **stack, unsigned int ln)
 				{"pall", pall_me},
 				{"pint", pint_me},
 				{"pop", pop_me},
+				{"swap", swap_me},
 				{NULL, NULL}
 				};
 
